@@ -1,0 +1,123 @@
+/* Загальні налаштування */
+
+body {
+  font-family: Roboto;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Налаштування логотипу */
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo.upper {
+  color: #000000;
+}
+
+.logo.lower {
+  color: #ffffff;
+}
+
+.logo-wrapper {
+  color: #2196f3;
+}
+
+/* Налаштування <header> */
+
+.navigation-link {
+  color: #212121;
+  text-decoration: none;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #2196f3;
+}
+
+.navigation-contacts {
+  color: #757575;
+  text-decoration: none;
+}
+
+.navigation-contacts:hover,
+.navigation-contacts:focus {
+  color: #2196f3;
+}
+
+/* Налаштування <footer> */
+
+.address {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Налаштування <main> для index.html */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+.hero-button {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.section-title {
+  color: #212121;
+}
+
+.features-title {
+  color: #212121;
+}
+
+.features-description {
+  color: #757575;
+}
+
+.team-name {
+  color: #212121;
+}
+
+.team-position {
+  color: #757575;
+}
+
+/* Налаштування <main> для portfolio.html */
+
+.filter-button {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.project-name {
+  color: #212121;
+}
+
+.project-type {
+  color: #757575;
+}
