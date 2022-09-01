@@ -19,6 +19,10 @@
 */
 
 :root {
+  --medium-font-weight: 500;
+  --bold-font-weight: 700;
+  --black-font-weight: 900;
+
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --white-color: #ffffff;
@@ -27,22 +31,16 @@
   --primary-background-color: #f5f5f5;
   --secondary-background-color: #f5f4fa;
   --dark-grey-color: #2f303a;
-
-  --primary-font: 'Roboto';
-  --regular-font-weight: 400;
-  --medium-font-weight: 500;
-  --bold-font-weight: 700;
-  --black-font-weight: 900;
 }
 
 /* Налаштування логотипу */
 .logo {
-  text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 
   color: #000000;
 }
@@ -58,7 +56,9 @@
 /* Налаштування основних позицій */
 
 body {
-  font-family: var(--primary-font), sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
 }
 
 .list {
@@ -66,14 +66,9 @@ body {
 }
 
 /* Налаштування <header> */
-header {
-  background-color: var(--white-color);
-  font-family: var(--primary-font), sans-serif;
-}
-
 .navigation-link {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: inherit;
 }
 
 .navigation-contacts {
@@ -89,16 +84,12 @@ header {
 }
 
 /* Налаштування <footer> */
-
 footer {
   background-color: var(--dark-grey-color);
-  font-family: var(--primary-font), sans-serif;
 }
 
 .address {
   text-decoration: none;
-  font-family: var(--primary-font), sans-serif;
-  font-weight: var(--regular-font-weight);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -116,7 +107,6 @@ footer {
 }
 
 .hero-title {
-  font-family: var(--primary-font), sans-serif;
   font-weight: var(--black-font-weight);
   font-size: 44px;
   line-height: 1.36;
@@ -128,7 +118,7 @@ footer {
 }
 
 .hero-button {
-  font-family: var(--primary-font), sans-serif;
+  font-family: inherit;
   font-weight: var(--bold-font-weight);
   font-size: 16px;
   line-height: 1.88;
@@ -138,40 +128,34 @@ footer {
   background-color: var(--blue-color);
 }
 
+.hero-button:hover {
+  cursor: pointer;
+}
+
 /* Налаштування секції "Переваги" */
 .section-title {
-  font-family: var(--primary-font), sans-serif;
   font-weight: var(--bold-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
 }
 
 .features-title {
-  font-family: var(--primary-font), sans-serif;
   font-weight: var(--bold-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: var(--primary-text-color);
 }
 
 .features-description {
-  font-family: var(--primary-font), sans-serif;
-  font-weight: var(--regular-font-weight);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
-
-/* Налаштування секції "Напрямки діяльності" */
 
 /* Налаштування секції "Про команду" */
 .section-team {
@@ -183,17 +167,13 @@ footer {
 }
 
 .team-name {
-  font-family: var(--primary-font), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
 }
 
 .team-position {
-  font-family: var(--primary-font), sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -208,13 +188,13 @@ footer {
 }
 
 .filter-button {
-  font-family: var(--primary-font), sans-serif;
+  font-family: inherit;
   font-weight: var(--medium-font-weight);
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: inherit;
   background-color: var(--secondary-background-color);
 }
 
@@ -222,21 +202,17 @@ footer {
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
+  cursor: pointer;
 }
 
 .project-name {
-  font-family: var(--primary-font), sans-serif;
   font-weight: var(--bold-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  color: var(--primary-text-color);
 }
 
 .project-type {
-  font-family: var(--primary-font);
-  font-weight: var(--regular-font-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
