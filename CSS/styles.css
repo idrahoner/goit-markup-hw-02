@@ -1,123 +1,245 @@
-/* Загальні налаштування */
+/* 
 
-body {
-  font-family: Roboto;
-  background-color: #f5f5f5;
-}
+Основні налаштування на сторінці:
 
-header {
-  background-color: #ffffff;
-}
 
-footer {
-  background-color: #2f303a;
-}
+-Основний колір тексту сторінки: #212121;
+-Другорядний колір тексту сторінки: #757575;
+-Білий колір тексту: #FFFFFF;
+-Синій колір тексту та кнопок: #2196F3;
 
-ul {
-  list-style-type: none;
+-Основний колір фону <header>: #ffffff;
+-Основний колір фону сторінки: #f5f5f5;
+-Другорядний колір фону сторінки: #F5F4FA;
+-Основний темний колір фону <footer>: #2F303A;
+
+-Осноинй шрифт сторінки: Roboto;
+-Другорядний шрифт сторінки: Raleway;
+
+*/
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-color: #ffffff;
+  --blue-color: #2196f3;
+
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #f5f4fa;
+  --dark-grey-color: #2f303a;
+
+  --primary-font: 'Roboto';
+  --regular-font-weight: 400;
+  --medium-font-weight: 500;
+  --bold-font-weight: 700;
+  --black-font-weight: 900;
 }
 
 /* Налаштування логотипу */
-
 .logo {
-  font-family: Raleway;
-  font-weight: 700;
   text-decoration: none;
-}
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 
-.logo.upper {
   color: #000000;
 }
 
-.logo.lower {
-  color: #ffffff;
+.logo-blue {
+  color: #2196f3;
 }
 
-.logo-wrapper {
-  color: #2196f3;
+.logo-white {
+  color: var(--white-color);
+}
+
+/* Налаштування основних позицій */
+
+body {
+  font-family: var(--primary-font), sans-serif;
+}
+
+.list {
+  list-style: none;
 }
 
 /* Налаштування <header> */
-
-.navigation-link {
-  color: #212121;
-  text-decoration: none;
+header {
+  background-color: var(--white-color);
+  font-family: var(--primary-font), sans-serif;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
-  color: #2196f3;
+.navigation-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .navigation-contacts {
-  color: #757575;
   text-decoration: none;
+  color: var(--secondary-text-color);
 }
 
+.navigation-link:hover,
+.navigation-link:focus,
 .navigation-contacts:hover,
 .navigation-contacts:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 
 /* Налаштування <footer> */
 
+footer {
+  background-color: var(--dark-grey-color);
+  font-family: var(--primary-font), sans-serif;
+}
+
 .address {
-  color: #ffffff;
   text-decoration: none;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--regular-font-weight);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Налаштування <main> для index.html */
-
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-grey-color);
 }
 
 .hero-title {
-  color: #ffffff;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--black-font-weight);
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
 .hero-button {
-  color: #ffffff;
-  background-color: #2196f3;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--bold-font-weight);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  background-color: var(--blue-color);
 }
 
+/* Налаштування секції "Переваги" */
 .section-title {
-  color: #212121;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--bold-font-weight);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
 }
 
 .features-title {
-  color: #212121;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--bold-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
 }
 
 .features-description {
-  color: #757575;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--regular-font-weight);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+/* Налаштування секції "Напрямки діяльності" */
+
+/* Налаштування секції "Про команду" */
+.section-team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-item {
+  background-color: var(--white-color);
 }
 
 .team-name {
-  color: #212121;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
 }
 
 .team-position {
-  color: #757575;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
 }
 
-/* Налаштування <main> для portfolio.html */
+/* Налаштування <main> сторінки "Портфоліо" */
+.section-portfolio {
+  background-color: var(--primary-background-color);
+}
 
 .filter-button {
-  color: #212121;
-  background-color: #f5f4fa;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--medium-font-weight);
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--blue-color);
 }
 
 .project-name {
-  color: #212121;
+  font-family: var(--primary-font), sans-serif;
+  font-weight: var(--bold-font-weight);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
 }
 
 .project-type {
-  color: #757575;
+  font-family: var(--primary-font);
+  font-weight: var(--regular-font-weight);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
 }
