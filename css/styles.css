@@ -66,25 +66,34 @@ body {
 }
 
 /* Налаштування <header> */
-.navigation-link {
+.navigation-link,
+.navigation-contacts {
   text-decoration: none;
+  font-weight: var(--medium-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation-link {
   color: inherit;
 }
 
 .navigation-contacts {
-  text-decoration: none;
   color: var(--secondary-text-color);
 }
 
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-contacts:hover,
-.navigation-contacts:focus {
+.navigation-contacts:focus,
+.address:hover,
+.address:focus {
   color: var(--blue-color);
 }
 
 /* Налаштування <footer> */
-footer {
+.footer {
   background-color: var(--dark-grey-color);
 }
 
